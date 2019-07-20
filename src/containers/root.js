@@ -23,6 +23,7 @@ export default class Root extends Component {
             <Route path="/login" component={Login} />
             <Route path="/changepassword" component={Change}/>
             <Route path="/findpassword" component={Find}/>
+            <Route path="/home" component={Home} />
           </Switch>
         </Router>
       </Provider>
