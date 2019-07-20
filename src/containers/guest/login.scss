@@ -4,6 +4,10 @@
   .login-form {
     width: 100%;
     margin-top: 100px;
+    img {
+      width: 70%;
+      max-width: 250px;
+    }
   .login-form-forgot {
     float: right;
   }

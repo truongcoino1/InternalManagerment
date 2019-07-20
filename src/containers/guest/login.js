@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 
 import 'antd/dist/antd.css';
 import './login.scss';
+import { validPassWord } from '../../utils/validation';
 
 import { Form, Icon, Input, Button, Checkbox } from 'antd';
 import { Row, Col } from 'antd';
@@ -20,7 +21,11 @@ class Login extends React.Component {
     };
 
     validatePass = (rule, value, callback) => {
-
+        if(value && value <= 6){
+            callback("Your password needs at least 6 characters");
+        }else{
+            callback();
+        }
     }
 
     render() {
@@ -31,7 +36,7 @@ class Login extends React.Component {
                 <Col xs={20} md={8}>
                     <Form onSubmit={this.handleSubmit} className="login-form">
                     <div style={{display: 'flex', justifyContent: 'center'}}>
-                        <img src={HeadImg} width={230}/>
+                        <img src={HeadImg}/>
                     </div>
                     <h1>Login </h1>
                     <Form.Item>
