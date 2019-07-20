@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'antd/dist/antd.css';
-import './login.css';
+import './login.scss';
 import { Form, Icon, Input, Button, Checkbox } from 'antd';
 import FormItem from 'antd/lib/form/FormItem';
 const HeadImg = require('./../../../src/assets/itleadpro.png');
@@ -19,7 +19,9 @@ class Login extends React.Component {
         const { getFieldDecorator } = this.props.form;
         return (
             <Form onSubmit={this.handleSubmit} className="login-form">
-                <img src={HeadImg} height={65} width={260} />
+                <div style={{display: 'flex', justifyContent: 'center'}}>
+                    <img src={HeadImg} width={230}/>
+                </div>
                 <h1>Login </h1>
                 <Form.Item>
                     <div className="label">Your email</div>
@@ -53,8 +55,10 @@ class Login extends React.Component {
                 </a>
                     <Button type="primary" htmlType="submit" className="login-form-button">
                         Log in
-                </Button>
-                    Or <a href="">contact admin for account.</a>
+                    </Button>
+                    <div style={{display: 'flex', justifyContent: 'center'}}>
+                        <span>or <a href="">contact admin for account.</a></span>
+                    </div>
                 </Form.Item>
             </Form>
         )

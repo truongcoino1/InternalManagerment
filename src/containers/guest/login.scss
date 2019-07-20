@@ -1,3 +1,24 @@
-// .container {
-//     color: red
-// }
+.login-form {
+    max-width: 300px;
+    position: absolute;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+  .login-form-forgot {
+    float: right;
+  }
+  .login-form-button {
+    width: 100%;
+  }
+  .label {
+      color: rgb(190, 190, 190);
+      font-size: 14px;  
+  }
+
+  h1 {
+    color: rgb(190, 190, 190);
+    margin: 10px 0px 20px;
+    text-align: center; 
+  }
+}
+  
