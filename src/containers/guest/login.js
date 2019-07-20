@@ -19,14 +19,23 @@ class Login extends React.Component {
         const { getFieldDecorator } = this.props.form;
         return (
             <Form onSubmit={this.handleSubmit} className="login-form">
-                <div style={{display: 'flex', justifyContent: 'center'}}>
-                    <img src={HeadImg} width={230}/>
+                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                    <img src={HeadImg} width={230} />
                 </div>
-                <h1>Login </h1>
+                <h1>Login</h1>
                 <Form.Item>
                     <div className="label">Your email</div>
                     {getFieldDecorator('username', {
-                        rules: [{ required: true, message: 'Please input your email' }],
+                        rules: [
+                            {
+                                required: true,
+                                message: 'Please input your email'
+                            },
+                            {
+                                type: 'email',
+                                message: 'Invalid email'
+                            }
+                        ],
                     })(
                         <Input
                             prefix={<Icon type="mail" style={{ color: 'rgba(0,0,0,.25)' }} />}
@@ -50,13 +59,13 @@ class Login extends React.Component {
                         valuePropName: 'checked',
                         initialValue: true,
                     })(<Checkbox>Remember me</Checkbox>)}
-                    <a className="login-form-forgot" href="">
+                    <a className="login-form-forgot" href="/findpassword">
                         Forgot password
                 </a>
                     <Button type="primary" htmlType="submit" className="login-form-button">
                         Log in
                     </Button>
-                    <div style={{display: 'flex', justifyContent: 'center'}}>
+                    <div style={{ display: 'flex', justifyContent: 'center' }}>
                         <span>or <a href="">contact admin for account.</a></span>
                     </div>
                 </Form.Item>
