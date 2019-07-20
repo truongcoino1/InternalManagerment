@@ -19,6 +19,7 @@ export default class Root extends Component {
           <Switch>
             <PrivateRoute exact path="/" component={Home} />
             <Route path="/login" component={Login} />
+            <Route path="/home" component={Home} />
           </Switch>
         </Router>
       </Provider>
