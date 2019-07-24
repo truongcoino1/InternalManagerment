@@ -14,5 +14,21 @@ code {
     monospace;
 }
 
-.ant-form-item{
+.ant-btn-primary{
+  background-color: #00589e;
+  border-color: #00589e;
+}
+
+.ant-btn-primary:hover{
+  background-color: #00589e;
+  border-color: #00589e;
+  opacity: 0.9;
+}
+
+.ant-form-item {
+  margin-bottom: 20px;
+}
+
+.ant-form-item-with-help {
+  margin-bottom: 5px;
 }

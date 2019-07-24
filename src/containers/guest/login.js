@@ -85,7 +85,7 @@ class Login extends React.Component {
                             <Button type="primary" htmlType="submit" className="login-form-button">
                                 Log in
                             </Button>
-                            <div style={{display: 'flex', justifyContent: 'center'}}>
+                            <div>
                                 <span>or <a href="">contact admin for account.</a></span>
                             </div>
                         </Form.Item>
