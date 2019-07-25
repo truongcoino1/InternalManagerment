@@ -1,0 +1,23 @@
+.user-profile{
+    max-width: 650px;
+    margin: auto;
+    padding: 30px;
+    margin-top: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    .row{
+        display: flex;
+        flex: 1;
+        .col-left{
+            width: 45%;
+            margin-bottom: 20px;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .col-right{
+            width: 55%;
+            margin-bottom: 20px;
+        }
+    }
+}
