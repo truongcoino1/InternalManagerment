@@ -32,3 +32,23 @@ code {
 .ant-form-item-with-help {
   margin-bottom: 5px;
 }
+
+.ant-menu-horizontal{
+  border-bottom: none;
+  right: 0px;
+  position: absolute;
+}
+
+.ant-menu-item .anticon, .ant-menu-submenu-title .anticon{
+  font-size: 20px;
+  margin-right: 0px;
+}
+
+.ant-menu-horizontal > .ant-menu-item {
+  margin: 0px 10px;
+}
+
+.ant-upload img{
+  width: 86px;
+  height: auto;
+}

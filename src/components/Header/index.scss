@@ -2,4 +2,21 @@
     height: 60px;
     width: 100%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    .logo{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        img {
+            height: 45px;
+            padding-left: 20px;
+        }
+    }
+    .left-menu {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .format{
+        height: 100%;
+    }
 }
