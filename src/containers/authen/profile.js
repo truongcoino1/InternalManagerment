@@ -3,7 +3,7 @@ import React from 'react';
 import Layout from '../../common/layout';
 import './profile.scss'
 
-import { Upload, Icon, message } from 'antd';
+import { Upload, Icon, message, Input, Button } from 'antd';
 
 function getBase64(img, callback) {
     const reader = new FileReader();
@@ -29,14 +29,14 @@ export class Profile extends React.Component{
             this.state = {
                 loading: false,
                 data: [
-                    {title: 'ID', content: 'User001', editable: 'true'},
-                    {title: 'Fullname', content: 'Ahihi Nguyen', editable: 'true'},
-                    {title: 'Date of birth', content: '01/01/2000', editable: 'false'},
-                    {title: 'Position', content: 'Developer', editable: 'true'},
-                    {title: 'Phone number', content: '0912 345 678', editable: 'true'},
-                    {title: 'Email', content: 'ahihi@gmail.com', editable: 'false'},
-                    {title: 'Start date', content: '01/01/2019', editable: 'false'},
-                ]
+                    {title: 'ID', content: 'User001', editable: false},
+                    {title: 'Full name', content: 'Ahihi Nguyen', editable: true},
+                    {title: 'Date of birth', content: '01/01/2000', editable: false},
+                    {title: 'Position', content: 'Developer', editable: false},
+                    {title: 'Phone number', content: '0912 345 678', editable: true},
+                    {title: 'Email', content: 'ahihi@gmail.com', editable: false},
+                    {title: 'Start date', content: '01/01/2019', editable: false},
+                ],
             }
         };
       
@@ -67,11 +67,24 @@ export class Profile extends React.Component{
         return(
             <Layout>
                 <div className="user-profile">
-                    <div className="row">
-                        <div className="col-left">
-                            <span>Avatar:</span>
-                        </div>
-                        <div className="col-right">
+                  <div className="title">
+                    <Icon type="user"/> <span>Peronal Infomation</span>
+                  </div>
+                  <div className="content row">
+                      <div className="col-left">
+                        {data.map((u, i) => {
+                          return(
+                            <div key={i}>
+                              <div className="nameField">{u.title}</div>
+                              <div className="inputField">
+                                <Input defaultValue={u.content} disabled={!u.editable}/>
+                              </div>
+                            </div>
+                          )
+                        })}
+                      </div>
+                      <div className="col-right">
+                        <div>Your Avatar</div>
                         <Upload
                             name="avatar"
                             listType="picture-card"
@@ -83,20 +96,9 @@ export class Profile extends React.Component{
                         >
                             {imageUrl ? <img src={imageUrl} alt="avatar" /> : uploadButton}
                         </Upload>
-                        </div>
-                    </div>
-                    {data.map( (item, i) => {
-                        return(
-                            <div key={i} className="row">
-                                <div className="col-left">
-                                    <span>{item.title}</span>
-                                </div>
-                                <div className="col-right">
-                                    <span>{item.content}</span>
-                                </div>
-                            </div>
-                        )
-                    })}
+                      </div>
+                  </div>
+                  <Button type="primary">Save</Button>
                 </div>
             </Layout>
         );

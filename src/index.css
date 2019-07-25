@@ -52,3 +52,15 @@ code {
   width: 86px;
   height: auto;
 }
+
+.ant-upload.ant-upload-select-picture-card{
+  margin: 0px;
+}
+
+.ant-badge-count {
+  padding: 0px;
+  min-width: 15px;
+  height: 15px;
+  font-size: 10px;
+  line-height: 15px;
+}

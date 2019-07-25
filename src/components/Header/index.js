@@ -4,7 +4,7 @@ import 'antd/dist/antd.css';
 import './index.scss';
 import headerLogo from '../../assets/itleadpro.png';
 
-import { Row, Col, Icon, Menu } from 'antd';
+import { Row, Col, Icon, Menu, Badge } from 'antd';
 
 const { SubMenu } = Menu;
 export class Header extends React.Component{
@@ -13,7 +13,7 @@ export class Header extends React.Component{
             <div className='header-bar'>
                 <Row className='format'>
                     <Col md={12} className='logo'>
-                        <img src={headerLogo} />
+                        <a href="/home"><img src={headerLogo} /></a>
                     </Col>
                     <Col md={12} className='left-menu'>
                         <Menu mode="horizontal">
@@ -30,8 +30,10 @@ export class Header extends React.Component{
                             <SubMenu
                                 title={
                                     <span className="submenu-title-wrapper">
-                                        <Icon type="mail" />
-                                        </span>
+                                        <Badge count={1}>
+                                            <Icon type="mail" />
+                                        </Badge>
+                                    </span>
                                 }
                             >
 
