@@ -28,6 +28,8 @@ export class Modal {
             <ModalHeader
               renderHeader={renderHeader}
               title={title}
+              onClose={onClose}
+              right
             />
           )}
           <div className="content">{content}</div>
@@ -47,7 +49,7 @@ export class Modal {
       // width,
       maxHeight: '70%',
       className:"customContainerModal",
-      style: { minWidth: width || 416 },
+      style: { minWidth: width || 416, maxWidth: width || 600 },
       centered: true
     });
   }

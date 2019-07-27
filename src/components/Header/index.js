@@ -9,7 +9,7 @@ const { SubMenu } = Menu;
 export class Header extends React.Component {
 
     showModal = () => {
-        openModal()
+        openModal();
     };
 
     render() {
@@ -52,7 +52,7 @@ export class Header extends React.Component {
                                     <a href='/profile'>Profile</a>
                                 </Menu.Item>
                                 <Menu.Item>Days-off list</Menu.Item>
-                                <Menu.Item>Log out</Menu.Item>
+                                <Menu.Item><a href="/login">Log out</a></Menu.Item>
                             </SubMenu>
                         </Menu>
                     </Col>

@@ -37,6 +37,11 @@ export class Attendance extends React.Component {
                 <div>
                     { today }
                 </div>
+                <div className="modal-footer">
+                    <button className="btn-checkin">
+                        Check - in
+                    </button>
+                </div>
             </div>
             
         )
@@ -44,12 +49,10 @@ export class Attendance extends React.Component {
 }
 
 export const openModal =()=>{
-    
     Modal.show({
         title: 'Attendance',
         content: <Attendance/>,
         onClose: () => {Modal.dismiss()},
-        confirmText: 'Check-in',
-        cancelText: 'Cancel',
+        renderFooter: true,
     })
 }

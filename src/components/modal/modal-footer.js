@@ -26,14 +26,14 @@ export class ModalFooter extends Component {
             {noClose ? (
               <div style={{ width: '70px' }} />
             ) : (
-              <Button className="button cancel-btn" onClick={onClose}>
+              <Button className="button btn-cancel" onClick={onClose}>
                 {cancelText || 'Close'}
               </Button>
             )}
             <div>
               {right ||
                 (!noComfirm && (
-                  <Button className="button primary-btn" onClick={onConfirm}>
+                  <Button className="button btn-primary" onClick={onConfirm}>
                     {confirmText || 'Confirm'}
                   </Button>
                 ))}

@@ -1,0 +1,22 @@
+.attendance-list{
+    max-width: 1400px;
+    min-width: 300px;
+    margin: auto;
+    padding: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);     
+}
+
+.title {
+    padding-top: 30px;
+    font-size: 24px;
+    padding-bottom: 30px;
+}
+
+.ant-table-wrapper {
+    zoom: 1;
+    padding-left: 4px;
+    padding-right: 4px;
+}

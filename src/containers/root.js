@@ -6,6 +6,7 @@ import { Profile } from '../containers/authen/profile'
 import  Login  from '../containers/guest/login'
 import Change from './guest/change_password'
 import Find from './guest/forgot_password'
+import { AttendanceList } from '../containers/authen/attendance_list'
 import { browserHistory } from '../utils/history'
 import PrivateRoute from './private-route'
 import { store, persistor } from '../store/custom-store'
@@ -26,6 +27,7 @@ export default class Root extends Component {
             <Route path="/findpassword" component={Find} />
             <Route path="/home" component={Home} />
             <Route path="/profile" component={Profile} />
+            <Route path="/attendance" component={AttendanceList} />
           </Switch>
         </Router>
       </Provider>
