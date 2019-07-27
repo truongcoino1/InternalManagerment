@@ -1,30 +1,34 @@
 import React from 'react';
-
-import 'antd/dist/antd.css';
 import './index.scss';
 import headerLogo from '../../assets/itleadpro.png';
+import { openModal } from '../Attendance/index';
 
 import { Row, Col, Icon, Menu, Badge } from 'antd';
 
 const { SubMenu } = Menu;
-export class Header extends React.Component{
-    render(){
-        return(
+export class Header extends React.Component {
+
+    showModal = () => {
+        openModal()
+    };
+
+    render() {
+        return (
             <div className='header-bar'>
                 <Row className='format'>
-                    <Col md={12} className='logo'>
+                    <Col xs={24} md={12} className='logo'>
                         <a href="/home"><img src={headerLogo} /></a>
                     </Col>
-                    <Col md={12} className='left-menu'>
+                    <Col xs={24} md={12} className='left-menu'>
                         <Menu mode="horizontal">
                             <SubMenu
                                 title={
                                     <span className="submenu-title-wrapper">
                                         <Icon type="calendar" />
-                                        </span>
+                                    </span>
                                 }
                             >
-                                <Menu.Item>Attendance</Menu.Item>
+                                <Menu.Item onClick={this.showModal}>Attendance</Menu.Item>
                                 <Menu.Item>Create a day-off</Menu.Item>
                             </SubMenu>
                             <SubMenu
@@ -36,13 +40,12 @@ export class Header extends React.Component{
                                     </span>
                                 }
                             >
-
                             </SubMenu>
                             <SubMenu
                                 title={
                                     <span className="submenu-title-wrapper">
                                         <Icon type="user" />
-                                        </span>
+                                    </span>
                                 }
                             >
                                 <Menu.Item>
@@ -55,7 +58,7 @@ export class Header extends React.Component{
                     </Col>
                 </Row>
             </div>
-            
+
         );
     }
 }

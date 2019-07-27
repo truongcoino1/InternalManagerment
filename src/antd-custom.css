@@ -1,0 +1,135 @@
+.ant-modal-body {
+  padding: 0 !important;
+  width: 100%;
+}
+
+.ant-modal-confirm-body {
+  margin: 0 !important;
+}
+
+.ant-modal-confirm-info {
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+.ant-modal-confirm-body .anticon-info-circle {
+  display: none !important;
+}
+
+.ant-modal-confirm-btns {
+  display: none !important;
+}
+
+.ant-select-selection {
+  border: none;
+}
+
+.ant-badge-count {
+  min-width: 15px;
+  height: 15px;
+  padding: 0;
+  top: 10px;
+  right: 2px;
+}
+
+span > img {
+  object-fit: cover;
+}
+
+.ant-badge-count span {
+  text-align: center;
+}
+
+.ant-badge-count span > p {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  padding-bottom: 4px;
+  text-align: center;
+}
+
+.ant-modal-confirm-title {
+  display: none !important;
+}
+.ant-modal-confirm-content {
+  margin: 0 !important;
+}
+.ant-switch-checked.ant-switch-loading .ant-switch-loading-icon {
+  color: #eb2f96;
+}
+.ant-switch-checked {
+  background-color: #eb2f96;
+}
+.ant-radio-group-solid
+  .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+  background: #eb2f96;
+  border-color: #eb2f96;
+  color: #fff;
+}
+.ant-radio-group-solid
+  .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover {
+  border-color: #eb2f96;
+  background: #eb2f96;
+  color: #fff;
+}
+.ant-radio-group-solid
+  .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):active {
+  border-color: #eb2f96;
+  background: #eb2f96;
+  color: #fff;
+}
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #eb2f96;
+  border-color: #eb2f96;
+}
+.ant-radio-checked::after {
+  border: 1px solid #eb2f96 !important;
+}
+.ant-radio-inner::after {
+  background-color: #eb2f96;
+}
+.ant-radio-checked .ant-radio-inner {
+  border-color: #eb2f96;
+}
+.ant-radio-focused .ant-radio-inner {
+  border-color: #eb2f96 !important;
+}
+
+.ant-popover-inner .ant-popover-title {
+  text-align: center;
+}
+
+.ant-table-scroll {
+  border-radius: 7px;
+}
+.ant-table td {
+  white-space: nowrap;
+}
+
+.ant-table-placeholder {
+  border-bottom: none;
+}
+
+.ant-table-placeholder .ant-empty-normal {
+  margin: 0;
+}
+
+.slider .slider-frame .slider-list .slider-slide {
+  height: 100% !important;
+}
+
+.ant-calendar-time .ant-calendar-footer a {
+  color: #eb2f96;
+}
+
+.ant-btn > span {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  display: inline;
+}
+
+.ant-modal-wrap {
+  overflow: hidden;
+  height: 100%;
+}

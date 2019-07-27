@@ -1,4 +1,5 @@
 @import '~antd/dist/antd.css';
+@import './antd-custom.css';
 
 body {
   margin: 0;
@@ -63,4 +64,13 @@ code {
   height: 15px;
   font-size: 10px;
   line-height: 15px;
+  top: 0px;
+}
+
+.ant-modal-footer .cancel-btn{
+  float: left;
+}
+
+.ant-badge-count span > p {
+  padding-bottom: 6px;
 }
