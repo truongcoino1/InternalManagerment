@@ -10,7 +10,7 @@ const openNotificationWithIcon = type => {
     notification[type]({
       message: 'Request Successfully',
       description:
-        'This is the content of the notification. This is the content of the notification. This is the content of the notification.',
+        'Done. Your request has been sent to the manager. ',
     });
     Modal.dismiss();
   };
