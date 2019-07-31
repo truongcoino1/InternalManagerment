@@ -8,7 +8,7 @@ import TextArea from 'antd/lib/input/TextArea';
 
 const openNotificationWithIcon = type => {
     notification[type]({
-      message: 'Notification Title',
+      message: 'Request Successfully',
       description:
         'This is the content of the notification. This is the content of the notification. This is the content of the notification.',
     });
