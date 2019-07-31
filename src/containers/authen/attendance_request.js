@@ -45,7 +45,7 @@ export class Attendance extends React.Component {
                     <DatePicker/>
                 </Form.Item>
                 <Form.Item label="Note">
-                <TextArea />
+                <TextArea placeholder="ex: Fix check-in to 8:50."/>
               </Form.Item>                                     
             </Form>
             
