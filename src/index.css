@@ -85,3 +85,7 @@ code {
 .ant-menu-inline{
   height: 100%;
 }
+
+.ant-table-thead > tr > th{
+  text-align: center;
+}
