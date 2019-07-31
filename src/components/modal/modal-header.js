@@ -15,12 +15,12 @@ export class ModalHeader extends Component {
         {renderHeader ? (
           <Fragment>
             <div className="item">{renderHeader.title}</div>
-            <div className="item" onClick={onClose}>{renderHeader.right}<Button><Icon type="close" /></Button></div>
+            <div className="item" onClick={onClose}>{renderHeader.right}<Button className="close-btn"><Icon type="close" /></Button></div>
           </Fragment>
         ) : (
           <Fragment>
             <div className="title">{title}</div>
-            <div className="right" onClick={onClose}>{right}<Button shape="circle"><Icon type="close" /></Button></div>
+            <div className="right" onClick={onClose}>{right}<Button className="close-btn" shape="circle"><Icon type="close" /></Button></div>
           </Fragment>
         )}
       </div>

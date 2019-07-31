@@ -76,15 +76,12 @@ code {
   padding-bottom: 6px;
 }
 
-.ant-btn {
-  background: none;
-  border: none;
-  color: rgba(0, 0, 0, 0.3)
+.ant-table-pagination.ant-pagination{
+  float: none;
+  display: flex;
+  justify-content: center;
 }
 
-.ant-btn:hover, .ant-btn:focus {
- background: none;
- color: rgba(0, 0, 0, 0.6);
- transition: cubic-bezier(0.445, 0.05, 0.55, 0.1);
- border: none;
+.ant-menu-inline{
+  height: 100%;
 }

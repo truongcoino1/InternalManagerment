@@ -2,9 +2,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import 'antd/dist/antd.css';
-import { Table, Icon } from 'antd';
+import { Table } from 'antd';
 import Layout from '../../common/layout';
-
 
 const columns = [
     {
@@ -50,6 +49,16 @@ export class AttendanceList extends Component {
                 { key: '3', No: '3', Date: '03/01/2019', 'Check-in': '9:10:00', 'Check-out': '18:05:00', 'Total': '8.2' },
                 { key: '4', No: '4', Date: '04/01/2019', 'Check-in': '9:16:00', 'Check-out': '18:16:00', 'Total': '8.25' },
                 { key: '5', No: '5', Date: '05/01/2019', 'Check-in': '9:19:00', 'Check-out': '18:21:00', 'Total': '8.15' },
+                { key: '6', No: '6', Date: '01/01/2019', 'Check-in': '9:00:00', 'Check-out': '18:00:00', 'Total': '8' },
+                { key: '7', No: '7', Date: '02/01/2019', 'Check-in': '9:05:00', 'Check-out': '18:30:00', 'Total': '8.1' },
+                { key: '8', No: '8', Date: '03/01/2019', 'Check-in': '9:10:00', 'Check-out': '18:05:00', 'Total': '8.2' },
+                { key: '9', No: '9', Date: '04/01/2019', 'Check-in': '9:16:00', 'Check-out': '18:16:00', 'Total': '8.25' },
+                { key: '10', No: '10', Date: '05/01/2019', 'Check-in': '9:19:00', 'Check-out': '18:21:00', 'Total': '8.15' },
+                { key: '11', No: '11', Date: '01/01/2019', 'Check-in': '9:00:00', 'Check-out': '18:00:00', 'Total': '8' },
+                { key: '12', No: '12', Date: '02/01/2019', 'Check-in': '9:05:00', 'Check-out': '18:30:00', 'Total': '8.1' },
+                { key: '13', No: '13', Date: '03/01/2019', 'Check-in': '9:10:00', 'Check-out': '18:05:00', 'Total': '8.2' },
+                { key: '14', No: '14', Date: '04/01/2019', 'Check-in': '9:16:00', 'Check-out': '18:16:00', 'Total': '8.25' },
+                { key: '15', No: '15', Date: '05/01/2019', 'Check-in': '9:19:00', 'Check-out': '18:21:00', 'Total': '8.15' },
             ],
         }
     };
@@ -73,8 +82,8 @@ export class AttendanceList extends Component {
                         bordered
                         style={{
                             zoom: 1,
-                            paddingLeft: 5,
-                            paddingRight: 5,
+                            paddingLeft: 20,
+                            paddingRight: 20,
                         }}
                         className="table-container"
                         columns={columns}

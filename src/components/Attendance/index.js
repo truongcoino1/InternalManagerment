@@ -10,6 +10,7 @@ export class Attendance extends React.Component {
         this.state = {
             today: moment().format('MMMM Do YYYY, h:mm a'),
             userName: 'Ahihi',
+            isCheckin: false,
         }
     }
 
@@ -27,8 +28,14 @@ export class Attendance extends React.Component {
         });
     }
 
+    handleCheckin = () => {
+        this.setState({
+            isCheckin: !this.state.isCheckin,
+        })
+    }
+
     render(){
-        const { today, userName } = this.state;
+        const { today, userName, isCheckin } = this.state;
         return (
             <div className="current-date">
                 <div>
@@ -38,8 +45,8 @@ export class Attendance extends React.Component {
                     { today }
                 </div>
                 <div className="modal-footer">
-                    <button className="btn-checkin">
-                        Check - in
+                    <button className="btn-checkin" onClick={this.handleCheckin}>
+                        { !isCheckin ? 'Check - in' : 'Check - out' }
                     </button>
                 </div>
             </div>

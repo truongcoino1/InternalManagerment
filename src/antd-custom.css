@@ -55,46 +55,6 @@ span > img {
 .ant-modal-confirm-content {
   margin: 0 !important;
 }
-.ant-switch-checked.ant-switch-loading .ant-switch-loading-icon {
-  color: #eb2f96;
-}
-.ant-switch-checked {
-  background-color: #eb2f96;
-}
-.ant-radio-group-solid
-  .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
-  background: #eb2f96;
-  border-color: #eb2f96;
-  color: #fff;
-}
-.ant-radio-group-solid
-  .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover {
-  border-color: #eb2f96;
-  background: #eb2f96;
-  color: #fff;
-}
-.ant-radio-group-solid
-  .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):active {
-  border-color: #eb2f96;
-  background: #eb2f96;
-  color: #fff;
-}
-.ant-checkbox-checked .ant-checkbox-inner {
-  background-color: #eb2f96;
-  border-color: #eb2f96;
-}
-.ant-radio-checked::after {
-  border: 1px solid #eb2f96 !important;
-}
-.ant-radio-inner::after {
-  background-color: #eb2f96;
-}
-.ant-radio-checked .ant-radio-inner {
-  border-color: #eb2f96;
-}
-.ant-radio-focused .ant-radio-inner {
-  border-color: #eb2f96 !important;
-}
 
 .ant-popover-inner .ant-popover-title {
   text-align: center;
@@ -117,10 +77,6 @@ span > img {
 
 .slider .slider-frame .slider-list .slider-slide {
   height: 100% !important;
-}
-
-.ant-calendar-time .ant-calendar-footer a {
-  color: #eb2f96;
 }
 
 .ant-btn > span {

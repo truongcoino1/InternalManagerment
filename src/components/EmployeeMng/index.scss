@@ -1,0 +1,14 @@
+.employee-mng {
+    width: 100%;
+    .title{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 20px;
+        width: 100%;
+        display: flex;
+        flex: 1;
+        .col-left{
+            width: 50%;
+        }
+    }
+}

@@ -10,6 +10,7 @@ import { AttendanceList } from '../containers/authen/attendance_list'
 import { browserHistory } from '../utils/history'
 import PrivateRoute from './private-route'
 import { store, persistor } from '../store/custom-store'
+import Admin from '../containers/authen/admin'
 
 export default class Root extends Component {
 
@@ -28,6 +29,7 @@ export default class Root extends Component {
             <Route path="/home" component={Home} />
             <Route path="/profile" component={Profile} />
             <Route path="/attendance" component={AttendanceList} />
+            <Route path="/admin" component={Admin} />
           </Switch>
         </Router>
       </Provider>
